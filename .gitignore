@@ -1,0 +1,4 @@
+/node_modules/
+/.git/
+*.test.*
+package-lock.json

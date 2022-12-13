@@ -1,0 +1,32 @@
+{
+  "name": "json-querier",
+  "version": "1.0.0",
+  "description": "Query JSON data like a pro.",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc index.ts -t esnext -m esnext -d --allowSyntheticDefaultImports --moduleResolution node --outDir ./dist",
+    "publish-beta-public": "npm publish --tag beta --registry=https://registry.npmjs.com --workspaces",
+    "publish-beta-private": "npm publish --tag beta --workspaces",
+    "publish-public": "npm publish --registry=https://registry.npmjs.com --workspaces",
+    "publish-private": "npm publish --workspaces"
+  },
+  "keywords": [
+    "json",
+    "query",
+    "search",
+    "object",
+    "data structures"
+  ],
+  "author": {
+    "name": "Rajaneesh R",
+    "email": "rajaneeshr@proton.me",
+    "url": "https://r-rajaneesh.vercel.app"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.14",
+    "jest": "^29.3.1"
+  }
+}
